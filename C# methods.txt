@@ -1,0 +1,465 @@
+Check no is equal or not
+
+
+using System;
+
+
+public class HelloWorld
+
+{
+  
+ public void Method(int a, int b) 
+{
+
+if 
+(a == b)
+
+{
+Console.WriteLine("{0} and {1} are equal.\n",a,b);
+}
+     
+else
+    
+{
+Console.WriteLine("{0} and {1} are not equal.\n",a,b);
+}}
+
+
+static void Main(string[] args)
+
+{
+    
+int x,y;
+    
+Console.Write("Enter 1st No ");  
+    
+x= Convert.ToInt32(Console.ReadLine());  
+
+Console.Write("Enter 2nd No ");  
+ 
+y= Convert.ToInt32(Console.ReadLine());
+  
+HelloWorld obj=new HelloWorld();
+  
+obj.Method(x,y);
+
+}}
+
+
+Write a C# Sharp program to check whether a given number is positive or negative.
+
+public class HelloWorld
+{
+ public void Method(int a) 
+{
+if 
+(a <0)
+{
+Console.WriteLine("{0} is negative no\n",a);
+}
+else
+{
+Console.WriteLine("{0} is positive no\n",a);
+}}
+static void Main(string[] args)
+{
+int x;
+Console.Write("Enter a No ");  
+x= Convert.ToInt32(Console.ReadLine());  
+HelloWorld obj=new HelloWorld();
+obj.Method(x);
+}}
+
+
+Write a C# Sharp program to find out whether a given year is a leap year or not
+
+using System;
+public class HelloWorld
+{
+ public void Method(int a) 
+{
+if ((a % 4) == 0){
+Console.WriteLine("{0} is leap year\n",a);}
+else
+{
+Console.WriteLine("{0} is not a leap year \n",a);
+}
+}
+static void Main(string[] args)
+{
+int x;
+Console.Write("Enter an Year ");  
+x= Convert.ToInt32(Console.ReadLine());  
+HelloWorld obj=new HelloWorld();
+obj.Method(x);
+}}
+
+
+Write a C# Sharp program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.
+
+using System;
+public class HelloWorld
+{
+ public void Method(int a) 
+{
+if 
+(a <18)
+{
+Console.WriteLine("{0} He is not eligibe to vote\n",a);
+
+}
+else
+{
+Console.WriteLine("{0} He is eligibe to vote\n",a);
+
+}}
+static void Main(string[] args)
+{
+int x;
+Console.Write("Enter Age ");  
+x= Convert.ToInt32(Console.ReadLine());  
+HelloWorld obj=new HelloWorld();
+obj.Method(x);
+}}
+
+
+Write a program in C# Sharp to display the first 10 natural numbers.
+
+using System;
+public class HelloWorld
+{
+ public void Method(int a) 
+{
+    int i;
+    Console.WriteLine("The first 10 natural numbers are:");
+	for (i=1;i<=10;i++)
+	{      
+     Console.Write("{0} ",i);
+	}
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method(10);
+}}
+
+
+Write a C# Sharp program that displays the sum of n natural numbers.
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+   int i,n,sum=0;
+   Console.Write("Enter the no");
+   n= Convert.ToInt32(Console.ReadLine());   
+   for(i=1;i<=n;i++)
+   {
+    sum=sum+i;
+   }
+   Console.Write("\nThe Sum of first {0} natural no are {1} \n",n,sum);
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a C# Sharp program to read 10 numbers and find their average and sum.
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+   int i,n,sum=0;
+	double avg;
+	Console.Write("Enter 10 numbers : \n");
+	for (i=1;i<=10;i++)
+	{
+        n= Convert.ToInt32(Console.ReadLine());		
+		sum =sum+n;
+	}
+	avg=sum/10.0;
+	Console.Write("The sum of given ten no is : {0}\n and their Average is : {1}\n",sum,avg);
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a C# Sharp program to display the cube of an integer up to given number.
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+   int i,a;
+   Console.Write("Enter total no terms");
+    a= Convert.ToInt32(Console.ReadLine());	
+    for(i=1;i<=a;i++)
+    {
+	 Console.Write(" The cube of the {1} is :{2} \n",i,i, (i*i*i));     
+    }
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a program in C# Sharp to display the multiplication table of a given integer.
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+   int i,a;
+   Console.Write("Enter the no");
+   a= Convert.ToInt32(Console.ReadLine());   
+   Console.Write("\n");
+   for(i=1;i<=10;i++)
+   {
+     Console.Write("{0} X {1} = {2} \n",a,i,a*i);
+   }
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a program in C# Sharp to display the multiplication table vertically from 1 to n.
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+    int j,i,n;
+   Console.Write("Enter the no ");
+   n= Convert.ToInt32(Console.ReadLine());   
+   Console.Write("Multiplication table from 1 to {0} \n",n);
+   for(i=1;i<=10;i++)
+   {
+     for(j=1;j<=n;j++)
+     {
+       if (j<=n-1)
+           Console.Write("{0}x{1} = {2}, ",j,i,i*j);
+          else
+	    Console.Write("{0}x{1} = {2}",j,i,i*j);
+}
+     Console.Write("\n");
+    }
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a C# Sharp program to display the n terms of odd natural numbers and their sums.
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+
+    int i,a,sum=0;
+   Console.Write("Enter the no");
+   a= Convert.ToInt32(Console.ReadLine());   
+  
+   for(i=1;i<=a;i++)
+   {
+    
+     sum=sum+2*i-1;
+   }
+   
+   Console.Write("\nThe Sum of odd Natural Number upto {0} terms : {1} \n",a,sum);
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a program in C# Sharp to display a right angle triangle with an asterisk.
+*
+**
+***
+****
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+
+     for (int i = 1; i <= 4; ++i)
+        {
+            for (int j = 1; j <= i; ++j)
+            {
+                Console.Write("*");
+            }
+
+            Console.WriteLine();
+        }
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a program in C# Sharp to display a pattern like a right angle triangle with a number.
+The pattern like :
+1
+12
+123
+1234
+
+using System;  
+
+public class abc 
+
+{  
+    
+public static void Main()
+
+{
+    
+ 
+for (int i = 1; i <= 4; ++i)
+        
+{
+            
+for (int j = 1; j <= i; ++j)
+            
+{
+              
+                
+Console.Write(j);
+            
+}
+
+            
+Console.WriteLine();
+        
+}
+}
+}
+
+
+Write a program in C# Sharp to make such a pattern like a right angle triangle with a number which repeats a number in a row.
+1
+22
+333
+4444
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+for (int i = 1; i <= 4; ++i)
+{
+for (int j = 1; j <= i; ++j)
+{
+Console.Write(i);
+}
+Console.WriteLine();
+}
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a C# Sharp program to make such a pattern like a right angle triangle with the number increased by 1.
+1
+2 3
+4 5 6
+7 8 9 10
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+   int i,n,sum=0;
+   Console.Write("Enter the no");
+   n= Convert.ToInt32(Console.ReadLine());   
+   for(i=1;i<=n;i++)
+   {
+    sum=sum+i;
+   }
+   Console.Write("\nThe Sum of first {0} natural no are {1} \n",n,sum);
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a C# Sharp program to calculate the factorial of a given number.
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+int i,a=1,b;
+  Console.Write("Enter the no");
+   b= Convert.ToInt32(Console.ReadLine()); 
+  for(i=1;i<=b;i++)
+      a=a*i;
+Console.Write("The Factorial of {0} is: {1}\n",b,a);
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
+
+Write a program in C# Sharp to display the n terms of even natural number and their sum.
+
+using System;
+public class HelloWorld
+{
+ public void Method() 
+{
+int i,a,sum=0;
+
+   Console.Write("Input number of terms : ");
+   a= Convert.ToInt32(Console.ReadLine());   
+   Console.Write("\nThe even numbers are :");
+   for(i=1;i<=a;i++)
+   {
+     Console.Write("{0} ",2*i);
+     sum=sum+2*i;
+   }
+    Console.Write("\n\n");
+   Console.Write("\nThe Sum of odd Natural Number upto {0} terms : {1} \n",a,sum);
+}
+static void Main(string[] args)
+{
+HelloWorld obj=new HelloWorld();
+obj.Method();
+}}
+
